@@ -1,0 +1,178 @@
+html {
+  font-family: monospace;
+}
+
+.header {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.header button {
+  border: none;
+  background: transparent;
+  margin: 2vw;
+}
+.header button img {
+  height: 7vh;
+  max-height: 10vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .header button img {
+    height: 5vh;
+  }
+}
+@media only screen and (max-height: 640px) {
+  .header button img {
+    height: 10vw;
+  }
+}
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 4vh;
+}
+.score #score {
+  margin-left: 0;
+  margin-right: 3rem;
+  justify-self: flex-start;
+}
+
+@media only screen and (max-width: 450px) {
+  .score {
+    font-size: 6vw;
+  }
+}
+.game-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ui-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#ui-wrapper .level-wrapper {
+  min-width: 5px;
+  margin-top: 1vh;
+}
+
+.TheVirus_controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: red;
+}
+.TheVirus_controls button {
+  font-size: 7vmin;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  align-self: center;
+  background-color: gold;
+}
+.TheVirus_controls button img {
+  width: 70px;
+}
+.TheVirus_controls p {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.TheVirus_controls .music-info {
+  color: white;
+}
+.TheVirus_controls .music-info a:link {
+  color: red;
+}
+.TheVirus_controls .music-info a:visited {
+  color: red;
+}
+.TheVirus_controls .music-info a:hover {
+  color: white;
+}
+.TheVirus_controls .music-info a:active {
+  color: gray;
+}
+.TheVirus_controls .title {
+  font-size: 12vmin;
+  margin-top: 5vh;
+}
+.TheVirus_controls .instructions {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+@media only screen and (max-height: 800px) {
+  .TheVirus_controls .title {
+    margin-top: 0;
+  }
+}
+.TheVirus_virus {
+  text-align: center;
+  margin-top: 4vh;
+  height: 13vw;
+  overflow: hidden;
+}
+.TheVirus_virus img {
+  width: 13vw;
+}
+
+@media only screen and (min-height: 640px) {
+  .TheVirus_virus {
+    height: 10vh;
+  }
+  .TheVirus_virus img {
+    width: 10vh;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .TheVirus_virus {
+    height: 10vh;
+  }
+  .TheVirus_virus img {
+    width: 10vh;
+  }
+}
+.game-status {
+  display: flex;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 5vw;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.game-over {
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 7vw;
+  }
+}
+@media only screen and (max-height: 800px) {
+  body {
+    font-size: 4vh;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

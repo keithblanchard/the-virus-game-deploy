@@ -1,0 +1,39 @@
+<audio id="sound" loop>
+    <source src="../audio/Guns-in-Dm.m4a" type="audio/mp4">
+</audio>
+<secton id="ui-wrapper">
+    <section class="header">
+        <div class="score">
+            <div>
+                <div>Score</div>
+                <div id="score">0</div>
+            </div>
+            <div>
+                <div>High Score</div>
+                <div id="high-score">&nbsp;</div>
+            </div>
+            <div>
+                <div id="level-label">Level</div>
+                <div id="level">1</div>
+            </div>
+        </div>
+        <button id="sound-toggle-button"
+                type="button"
+                onclick="TheVirus.toggleAudio()"></button>
+
+    </section>
+    <secton id="game-status" class="game-status" style="display: none;">
+        <h2 id="game-over" class="game-over" style="display: none;">Game Over</h2>
+    </secton>
+    <sectonMen id="controls" class="TheVirus_controls">
+        <span class="title">The Virus</span>
+        <p class="music-info">Music and Graphics by <a href="http://www.krystisubieta.com/">KRYSTI SUBIETA</a></p>
+        <p class="instructions">Destroy falling viruses. Click on them before they infect you.</p>
+        <button id="start-button" type="button" onclick="TheVirus.init();">Start</button>
+        <div id="viruses" class="TheVirus_virus"></div>
+    </sectonMen>
+</secton>
+
+<section class="game-wrapper">
+    <canvas class="canvas" id="canvas" onmousedown="TheVirus.handleClick()"></canvas>
+</section>
